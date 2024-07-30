@@ -37,6 +37,10 @@ public class CandidateController extends HttpServlet
 				req.getRequestDispatcher("/WEB-INF/views/add_candidate.jsp").forward(req, resp);
 				break;
 			}
+			case "edit":
+			{
+				break;
+			}
 			default:
 		}
 	}
@@ -78,6 +82,10 @@ public class CandidateController extends HttpServlet
 				{
 					throw new RuntimeException(e);
 				}
+				break;
+			}
+			case "edit":
+			{
 				break;
 			}
 			default:
